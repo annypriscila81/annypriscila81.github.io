@@ -1,0 +1,595 @@
+@charset "UTF-8";
+/* SOBRESCRIÇÃO DE ESTILOS NATIVOS BOOTSTRAP */
+@font-face {
+  font-family: 'Editundo';
+  src: url("../../assets/fonts/editundo.ttf");
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../../assets/fonts/fontawesome/fa-solid-900.eot");
+  src: url("../../assets/fonts/fontawesome/fa-solid-900.eot?#iefix") format("embedded-opentype"), 
+        url("../../assets/fonts/fontawesome/fa-solid-900.woff2") format("woff2"), 
+        url("../../assets/fonts/fontawesome/fa-solid-900.woff") format("woff"), 
+        url("../../assets/fonts/fontawesome/fa-solid-900.ttf") format("truetype"), 
+        url("../../assets/fonts/fontawesome/fa-solid-900.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  margin: 0 0 0.5% 0;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  height: cover;
+  font-size: 22px;
+  animation: rodar;
+  animation-duration: 60s;
+}
+
+div {
+  text-align: center;
+}
+
+a:link {
+  color: #000000;
+  float: justify;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:link, a:visited {
+  color: aliceblue;
+}
+
+a:hover {
+  color: #c1ed9c;
+}
+
+.tituloprincipal {
+  text-align: center;
+  font-family: 'Editundo';
+  border: 6px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #91be76;
+  background-size: 80% 40px;
+  padding: 0.3cm;
+  border-bottom: 6px solid #669b66;
+  font-size: 84px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  right: 0;
+  padding-bottom: 20px;
+  padding-top: 0.5%;
+  line-height: 59px;
+}
+
+.textoprincipal {
+  margin-left: 300px;
+  margin-right: 300px;
+  text-indent: 20px;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.anim--shake {
+  animation: shake 0.5s;
+  animation-iteration-count: 2;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.arrow_control::before {
+  font-size: 56px;
+}
+
+.arrow_directions button {
+  background-color: #ffffff;
+  border-style: none;
+}
+
+input.button {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Editundo',  'Gill Sans',  'Gill Sans MT',  'Calibri',  'Trebuchet MS',  'sans-serif';
+  background-color: #91be76;
+  padding: 1rem;
+  border-bottom: 9px solid #669b66;
+  border-right: 9px solid #abcfab;
+}
+
+input.button.fill {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  input.button.w-100-xl {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* original */
+.botao_jogar {
+  -moz-box-shadow: inset 0px 1px 0px 0px #c1ed9c;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #c1ed9c;
+  box-shadow: inset 0px 1px 0px 0px #c1ed9c;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #91be76), color-stop(1, #8cb82b));
+  background: -moz-linear-gradient(center top, #9dce2c 5%, #8cb82b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9dce2c', endColorstr='#8cb82b');
+  background-color: #91be76;
+  -webkit-border-top-left-radius: 37px;
+  -moz-border-radius-topleft: 37px;
+  border-top-left-radius: 37px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 37px;
+  -moz-border-radius-bottomright: 37px;
+  border-bottom-right-radius: 37px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  text-indent: 0;
+  border: 2px solid #669b66;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: bold;
+  font-style: normal;
+  height: 69px;
+  line-height: 69px;
+  width: 105px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0px #689324;
+  font-family: 'Editundo';
+}
+
+.classname:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #8cb82b), color-stop(1, #9dce2c));
+  background: -moz-linear-gradient(center top, #8cb82b 5%, #9dce2c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cb82b', endColorstr='#9dce2c');
+  background-color: #8cb82b;
+}
+
+.classname:active {
+  position: relative;
+  top: 1px;
+  font-family: 'Editundo';
+}
+
+.botao_2 {
+  font-family: 'Editundo';
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b7ed97), to(#79b376));
+  background: linear-gradient(top, #b7ed97 0%, #79b376);
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+  box-shadow: 0px 1px 3px rgba(255, 255, 255, 0.5), inset 0px 0px 3px white;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px white;
+  text-decoration: none;
+  margin-left: 50%;
+  text-align: center;
+}
+
+.leia {
+  background-color: #669b66;
+  color: #669b66;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  font-family: 'Editundo';
+  border-bottom: 6px solid #669b66;
+}
+
+.botao_3 {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+  background: -moz-linear-gradient(center top, #f9f9f9 5%, #e9e9e9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
+  background-color: #f9f9f9;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  text-indent: 1.31px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #666666;
+  font-family: 'Editundo';
+  font-size: 21px;
+  font-weight: bold;
+  font-style: normal;
+  height: 65px;
+  line-height: 65px;
+  width: 152px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 1px 1px 0px #ffffff;
+}
+
+.game-over .modal {
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px dashed #ffffff;
+  box-shadow: 0 0 0 10px #000000;
+}
+
+.game-over .points_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.game-over .points_container > * {
+  margin: 0;
+}
+
+.game-over .points_container p {
+  margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .game-over .points_container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .game-over .points_container {
+    font-size: 1.2rem;
+  }
+}
+
+.game-over input.button {
+  cursor: pointer;
+  color: #000000;
+  font-size: 1.6rem;
+  box-shadow: 2px 3px 18px 0 rgba(46, 61, 73, 0.5);
+  background-color: #ffffff;
+  border: 5px solid #ffffff;
+  border-radius: 6px;
+  padding: 10px 25px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .game-over input.button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .game-over input.button {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .game-over input.button {
+    font-size: 1.4rem;
+  }
+}
+
+.modal {
+  background: #ffffff;
+  width: 45%;
+  min-width: 250px;
+  padding: 25px;
+  border: 2px dashed #000000;
+  box-shadow: 0 0 0 10px #ffffff;
+  font-size: 1.3em;
+}
+
+.modal h2 {
+  font-family: 'Editundo', cursive;
+  font-size: 2.7rem;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+@media (min-width: 768px) {
+  .modal h2 {
+    font-size: 3.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal h2 {
+    font-size: 5rem;
+  }
+}
+
+.modal h3 {
+  margin: 0 3px 0 0;
+}
+
+.modal .rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: monospace;
+  text-transform: lowercase;
+}
+
+.modal .rules ul {
+  text-align: justify;
+  padding-left: 1rem;
+}
+
+.modal .rules ul > li {
+  margin: 1rem 0;
+}
+
+@media (min-width: 992px) {
+  .modal .rules ul > li {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal .rules {
+    font-size: 0.9rem;
+  }
+}
+
+.modal p:first-child {
+  display: block;
+  margin: 33px 0;
+}
+
+.modal-container {
+  z-index: 2000;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.show {
+  display: flex;
+}
+
+.modal-container.show .modal {
+  animation: modal .5s;
+}
+
+.modal-container.game-over {
+  background-color: #000000;
+  font-family: 'Editundo', cursive;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: 'Editundo';
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: 6px;
+  border-bottom: 6px solid #669b66;
+  background-color: #91be76;
+  background-size: 80% 40px;
+  padding: 0.3cm;
+  padding-bottom: 20px;
+  padding-top: 0.5%;
+}
+
+.panel > * {
+  margin: 0 3rem;
+}
+
+.panel div > h4 {
+  margin: 0;
+}
+
+.heart-lives::before {
+  font-size: 20px;
+  padding: 0 2px;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem;
+  }
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+.progress {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #91be76;
+  border-radius: 0;
+  border: 0;
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #d8a60f;
+  transition: width 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar {
+    transition: none;
+  }
+}
+
+.progress-bar-striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+}
+
+.progress-bar-animated {
+  -webkit-animation: 1s linear infinite progress-bar-stripes;
+  animation: 1s linear infinite progress-bar-stripes;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar-animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+.overlay {
+  z-index: 999;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #91be76;
+  font-family: 'Editundo';
+  color: white;
+}
+
+.overlay_title {
+  font-size: 8rem;
+  margin: 0;
+}
+
+.overlay_countdown {
+  font-size: 6rem;
+}
+
+.caixa_lado {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  text-align: center;
+  right: 0px;
+  padding: 2px;
+  background-color: #91be76;
+  width: 250px;
+  height: 150px;
+  bottom: 40px;
+  position: absolute;
+  border-bottom: 9px solid #669b66;
+  border-right: 9px solid #abcfab;
+}
+
+.lixeiros_site {
+  width: 100px;
+  text-decoration: none;
+}
+
+.link_lixeiros {
+  text-decoration: none;
+}
+
+.volume_controls {
+  font-family: 'FontAwesome';
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

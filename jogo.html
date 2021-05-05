@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <meta http-equiv='x-ua-compatible' content='ie=edge'>
+
+  <title>
+    O Jogo - Reciclus
+  </title>
+
+  <link rel='shortcut icon' href='./assets/img/favicon.ico'  type='image/x-icon'>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Amiri|Didact+Gothic|Hind+Siliguri|Questrial|Sanchez&display=swap" rel="stylesheet">
+  
+  <link rel='stylesheet' href='./assets/css/vendor/font-awesome.min.css'>
+  <link rel='stylesheet' href='./assets/css/vendor/bootstrap/bootstrap-grid.min.css'>
+  <link rel='stylesheet' href='./assets/css/vendor/bootstrap/bootstrap-utilities.min.css'>
+
+  <link rel='stylesheet' href='./assets/css/main.css'>
+</head>
+
+
+  <body>
+    <!-- GAME TOP PANEL -->
+    <div class="panel sticky-top">
+      <a href="./index.html" 
+          style="position: absolute;left: 0;font-family: 'FontAwesome';text-decoration: none;">
+        <span class="fas fa-arrow-left"></span>
+      </a>
+
+      <div class="level">
+        <h4>Level</h4>
+        <span class="level-number">0</span>
+      </div>
+      
+      <div class="lives">
+        <h4>Vidas</h4>
+        <div id="lives_container"></div>
+      </div>
+
+      <div class="score">
+        <h4>Pontuação</h4>
+        <span class="points">0</span>
+      </div>
+
+      <div class="progress w-100">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+</div>
+
+    </div>
+    <!-- /GAME TOP PANEL -->
+
+    <div class="d-flex flex-column align-items-center">
+      	<!-- GAME CANVAS -->
+	<div id="canvas_container" class="position-relative">
+    <div class="overlay d-none">
+      <h3 class="overlay_title">level up!</h3>
+      <time class="overlay_countdown"></time>
+    </div>
+
+    <div class="volume_controls">
+      <span class="fas fa-volume-up"></span>
+      <span class="fas fa-volume-off d-none"></span>
+    </div>
+	</div>
+	<!-- /GAME CANVAS -->
+
+      <!-- START SCREEN -->
+<div id="startScreen" class="modal-container">
+  <div class="modal">
+
+    <h2>reciclus</h2>
+
+    <div class="row">
+      <div class="rules col-lg-7">
+
+        <h3>Como Jogar</h3>
+
+        <ul>
+          <li>use a lixeira para juntar plástico;</li>
+          <li><span class="bolder">cuidado!</span> Juntar outro tipo de lixo pode te fazer perder o jogo.</li>
+        </ul>
+      </div>
+
+      <div class=" col-lg-5 d-flex flex-column align-items-center justify-content-center">
+        <input id="playGame" type="button" class="button fill w-100-xl" value="começar">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /START SCREEN -->
+
+      <!-- GAME OVER SCREEN -->
+<div id="gameOverScreen" class="modal-container game-over">
+  <div class="modal">
+    <h2>Fim de Jogo</h2>
+
+    <div class="row">
+      <div class="points_container col-md-6">
+        <h3>Pontuação Final</h4>
+        <p><span class="points-finalScore">0</span></p>
+      </div>
+
+      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+        <input id="tryAgain" type="button" class="button" value="Jogar Novamente">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /GAME OVER SCREEN -->
+
+      	<!-- ARROW DIRECTIONS PANEL -->
+	<div class="arrow_directions d-lg-none">
+		<button id="arrow-left"><i class="fa fa-chevron-circle-left arrow_control"></i></button>
+
+		<button id="arrow-right"><i class="fa fa-chevron-circle-right arrow_control"></i></button>
+	</div>
+	<!-- /ARROW DIRECTIONS PANEL -->
+
+    </div>
+
+    
+    <script src="./assets/js/resources.js"></script>
+    <script src="./assets/js/engine.js"></script>
+    <script src="./assets/js/reciclus.js"></script>
+    <script src='./assets/js/main.js'></script>
+  </body>
+</html>
+
+
